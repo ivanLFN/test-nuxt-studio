@@ -5,7 +5,7 @@ defineProps<{ image: string }>()
 <template>
   <section class="flex flex-col sm:flex-row sm:items-center flex-col-reverse gap-4 py-8 sm:gap-12 sm:py-12">
     <div>
-      <h1 class="text-4xl font-semibold">
+      <h1 class="text-5xl font-bold">
         <slot name="title" />
       </h1>
       <div class="text-base text-gray-600 dark:text-gray-300">
@@ -31,6 +31,15 @@ section {
     gap: 3rem;
     padding: 3rem 0;
   }
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text-base {
+  font-size: 1.25rem; /* Increase the base text size */
 }
 
 img {
