@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import CaruselComponent from '~/components/CaruselComponent.vue';
+
 definePageMeta({
   layout: 'default'
 })
@@ -30,5 +32,6 @@ if (!posts.value) {
 
       &nbsp;{{ post.description }}
     </p>
+    <CaruselComponent />
   </div>
 </template>
