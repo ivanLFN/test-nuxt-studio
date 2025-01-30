@@ -9,6 +9,10 @@ const { data: posts } = await useAsyncData(() => {
     .order('date', 'DESC')
     .all()
 })
+
+if (!posts.value) {
+  console.error('No posts found')
+}
 </script>
 
 <template>
@@ -17,6 +21,7 @@ const { data: posts } = await useAsyncData(() => {
     <p
       v-for="post in posts"
       :key="post.id"
+      v-if="posts"
     >
       >
       <nuxt-link :to="post.path">

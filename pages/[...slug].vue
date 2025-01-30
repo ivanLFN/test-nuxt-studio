@@ -9,6 +9,10 @@ const { data: post } = await useAsyncData(() => {
     .path(route.path)
     .first()
 })
+
+if (!post.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Post not found' })
+}
 </script>
 
 <template>
@@ -16,7 +20,7 @@ const { data: post } = await useAsyncData(() => {
     <nuxt-link to="/">
       <small>« Back </small>
     </nuxt-link>
-    <h1>{{ post.title }}</h1>
-    <ContentRenderer :value="post" />
+    <h1 v-if="post">{{ post.title }}</h1>
+    <ContentRenderer v-if="post" :value="post" />
   </div>
 </template>
