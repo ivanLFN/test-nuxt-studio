@@ -1,7 +1,7 @@
 ---
 title: About Me
-description: Welcome to my blog! I am a passionate developer sharing my thoughts and experiences in the world of technology.
-
+description: Welcome to my blog! I am a passionate developer sharing my thoughts
+  and experiences in the world of technology.
 navigation: true
 ---
 

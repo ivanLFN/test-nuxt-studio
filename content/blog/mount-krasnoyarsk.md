@@ -8,9 +8,8 @@ date: 2025-03-03
 ---
 image: /mountains/krasnoyarsk.jpg
 ---
-
 #title
-The Krasnoyarsk mountain
+The Krasnoyarsk mountain test
 
 #description
 This is a bigest mountain in Krasnoyarsk area
